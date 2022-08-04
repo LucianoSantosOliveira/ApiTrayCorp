@@ -8,7 +8,7 @@ using System;
 namespace TesteUnitarioApiTrayCorp
 {
     [TestClass]
-    public class UnitTest1
+    public class CreateProduto
     {
         [TestMethod]
         public void SaveProduto()
