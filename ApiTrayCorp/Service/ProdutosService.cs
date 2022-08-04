@@ -24,16 +24,19 @@ namespace ApiTrayCorp.Service
         public void EditProduto(Produtos produto)
         {
              _context.Produtos.Update(produto);
+             _context.SaveChanges();
         }
 
         public void CreateProduto(Produtos produto)
         {
             _context.Produtos.Add(produto);
+            _context.SaveChanges();
         }
 
         public void DeleteProduto(Produtos produto)
         {
             _context.Produtos.Remove(produto);
+            _context.SaveChanges();
         }
     }
 }
