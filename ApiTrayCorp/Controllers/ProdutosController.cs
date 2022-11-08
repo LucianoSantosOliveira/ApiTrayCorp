@@ -14,9 +14,9 @@ namespace ApiTrayCorp.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        private readonly ApiTrayCorpContext _context;
+        private readonly ProdutoContext _context;
 
-        public ProdutosController(ApiTrayCorpContext context)
+        public ProdutosController(ProdutoContext context)
         {
             _context = context;
         }

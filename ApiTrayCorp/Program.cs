@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ApiTrayCorp.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApiTrayCorpContext>(options =>
+builder.Services.AddDbContext<ProdutoContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ApiTrayCorpContext") ?? throw new InvalidOperationException("Connection string 'ApiTrayCorpContext' not found.")));
 
 // Add services to the container.
